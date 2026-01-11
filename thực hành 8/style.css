@@ -1,0 +1,28 @@
+:root { --main-color: #2c3e50; --accent: #3498db; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+.container { padding: 20px; max-width: 1200px; margin: auto; }
+
+/* Danh sách con vật */
+#danhsach { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.animal-card { 
+    background: white; padding: 15px; border-radius: 10px; width: 200px; 
+    text-align: center; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+/* Footer */
+footer { 
+    background: var(--main-color); color: white; padding: 30px; 
+    margin-top: 50px; text-align: left; 
+}
+.footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.footer-map iframe { border-radius: 8px; width: 300px; height: 150px; }
+
+/* Thư viện ảnh */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.gallery img { width: 100%; border-radius: 8px; }
+
+.animal-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
